@@ -25,7 +25,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-24 bg-white dark:bg-brand-dark transition-colors">
+    <section id='services' className="py-24 bg-white dark:bg-brand-dark transition-colors">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-6">
           <div className="max-w-2xl text-left">
@@ -34,7 +34,7 @@ const Services = () => {
               Comprehensive Construction <br /> & Water Solutions
             </h3>
           </div>
-          <p className="text-gray-500 dark:text-gray-400 max-w-sm sm:mx-auto ">
+          <p className="text-gray-500 dark:text-gray-400 max-w-sm sm:mx-auto sm:mx-0">
             We don't just build; we engineer environments that stand the test of time and climate.
           </p>
         </div>

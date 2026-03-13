@@ -16,6 +16,7 @@ const Navbar = () => {
     { name: 'Projects', href: '#projects' },
     { name: 'Process', href: '#process' },
     { name: 'About', href: '#about' },
+
   ];
 
   return (
@@ -50,14 +51,14 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <button className="bg-brand-primary hover:bg-sky-500 text-white px-6 py-3 rounded-sm font-bold transition-all hover:shadow-lg hover:shadow-sky-500/20">
+            <a href="#contact" className="bg-brand-primary hover:bg-sky-500 text-white px-6 py-3 rounded-sm font-bold transition-all hover:shadow-lg hover:shadow-sky-500/20 cursor-pointer">
               GET A QUOTE
-            </button>
+            </a>
           </div>
 
           {/* Mobile Toggle (Hamburger) */}
           <button 
-            className="md:hidden flex flex-col gap-1.5 z-50 focus:outline-none"
+            className="md:hidden flex flex-col gap-1.5 z-50 focus:outline-none cursor-pointer"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <span className={`h-0.5 w-6 bg-current transition-all ${isMenuOpen ? 'rotate-45 translate-y-2' : ''} ${isScrolled || isMenuOpen ? 'text-gray-900 dark:text-white' : 'text-white'}`} />
@@ -80,9 +81,12 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <button className="mt-4 bg-brand-primary text-white px-10 py-4 rounded-sm font-bold text-lg">
+          <a
+            href='#contact'
+            onClick={() => setIsMenuOpen(false)}
+            className="mt-4 bg-brand-primary text-white px-10 py-4 rounded-sm font-bold text-lg cursor-pointer">
             GET A QUOTE
-          </button>
+          </a>
         </div>
       </nav>
     </>

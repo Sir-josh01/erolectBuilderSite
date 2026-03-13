@@ -5,3 +5,7 @@
   --color-brand-primary: #0ea5e9; /* Pool blue */
   --color-brand-accent: #f59e0b;  /* Construction yellow */
 }
+
+html {
+  scroll-behavior: smooth;
+}
