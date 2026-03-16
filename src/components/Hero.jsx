@@ -1,4 +1,5 @@
 import React from 'react';
+// import Link from 'react-dom';
 
 const Hero = () => {
   return (
@@ -25,12 +26,12 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="px-8 py-4 bg-brand-primary hover:bg-sky-500 text-white font-bold rounded-sm transition-all shadow-lg hover:shadow-sky-500/20">
+            <a href='#projects' className="px-8 py-4 bg-brand-primary hover:bg-sky-500 text-white font-bold rounded-sm transition-all shadow-lg hover:shadow-sky-500/20 active:scale-95">
               View Portfolio
-            </button>
-            <button className="px-8 py-4 border border-gray-600 text-white hover:bg-white hover:text-brand-dark font-bold rounded-sm transition-all">
+            </a>
+            <a href='#contact' className="px-8 py-4 border border-gray-600 text-white hover:bg-white hover:text-brand-dark font-bold rounded-sm transition-all active:scale-95">
               Request a Quote
-            </button>
+            </a>
           </div>
 
           {/* Quick Stats / Trust Bar */}
