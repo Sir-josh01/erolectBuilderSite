@@ -21,12 +21,22 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`fixed w-full z-50 transition-all duration-300 ${
+      <nav className={`fixed w-full z-50 transition-all duration-300 border-2 border-b-mauve-50 ${
         isScrolled || isMenuOpen ? 'bg-white dark:bg-brand-dark py-4 shadow-lg' : 'bg-transparent py-6'
       }`}>
         <div className="container mx-auto px-6 flex justify-between items-center">
           
           {/* Logo */}
+          <a 
+            href='/'>
+             <img 
+                src="/logo.png"
+                alt="logo-image"
+                width={50}
+                height={50}
+              />
+          </a>
+         
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 bg-brand-primary flex items-center justify-center rounded-sm">
               <span className="text-white font-black text-xl">E</span>

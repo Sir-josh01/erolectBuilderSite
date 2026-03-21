@@ -5,6 +5,7 @@ import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Process from './components/Process';
 import WhyChooseUs from './components/WhyChooseUs';
+import About from './components/About';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import './App.css'
@@ -20,9 +21,10 @@ function App() {
       <main>
         <Hero />
         <WhyChooseUs />
+        <About />
         <Services />
-        <Portfolio />
         <Process />
+        <Portfolio />
         <ContactForm />
       </main>
       <Footer />
