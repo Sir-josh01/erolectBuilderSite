@@ -171,39 +171,41 @@ const Portfolio = () => {
             ></div>
 
             {/* Modal Content */}
-            <div className="relative bg-white dark:bg-gray-800 w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-sm flex flex-col md:flex-row shadow-2xl">
+            <div className="relative bg-white dark:bg-gray-800 w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-sm flex flex-col md:flex-row shadow-2xl overflow-x-hidden">
               <button
                 onClick={() => setSelectedProject(null)}
-                className="absolute top-4 right-4 z-50 bg-brand-primary text-white w-10 h-10 flex items-center justify-center font-bold hover:bg-sky-500 transition-colors"
+                className="absolute top-2 right-2 md:top-4 md:right-4 z-50 bg-brand-primary text-white w-9 h-9 flex items-center justify-center font-bold hover:bg-sky-500 shadow-xl cursor-pointer
+                "
               >
                 ✕
               </button>
 
               {/* Modal Image */}
-              <div className="md:w-1/2 h-64 md:h-auto bg-black flex items-center">
+              <div className="w-full md:w-1/2 h-[260px] sm:h-[350px] md:h-auto bg-black flex items-center justify-center shrink-0 border-b md:border-b-0 md:border-r border-gray-100 dark:border-gray-700">
                 {selectedProject.type === "video" ? (
                   <video
                     src={selectedProject.videoUrl}
                     controls
                     autoPlay
                     loop
-                    className="w-full h-full object-cover"
+                    playsInline
+                    className="w-full h-full object-contain bg-black"
                   >
                     Your browser does not support the video tag.
                   </video>
                 ) : (
                   <img
                     src={selectedProject.img}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain md:object-contain bg-black"
                     alt={selectedProject.title}
                   />
                 )}
               </div>
 
               {/* Modal Details */}
-              <div className="md:w-1/2 p-8 md:p-12 space-y-6">
-                <div>
-                  <span className="text-brand-primary font-bold uppercase tracking-widest text-xs">
+              <div className="w-full md:w-1/2 p-8 md:p-12 space-y-6 bg-white dark:bg-gray-800">
+                <div className="pt-2 md:pt-0">
+                  <span className="text-brand-primary font-bold uppercase tracking-widest text-xs md:text-xs">
                     {selectedProject.category}
                   </span>
                   <h2 className="text-3xl font-bold text-gray-900 dark:text-white mt-2">
