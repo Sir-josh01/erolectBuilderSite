@@ -65,7 +65,7 @@ const projects = [
   },
   {
     id: 6,
-    // type: "",
+    type: "video",
     category: "Construction",
     title: "Steel Frame Warehouse",
     img: "/con-work.jpg",
