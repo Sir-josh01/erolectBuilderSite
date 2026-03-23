@@ -26,6 +26,7 @@ const projects = [
     problem: "Strict deadlines for a high-rise foundation.",
     solution:
       "Used accelerated curing concrete and 24-hour engineering shifts.",
+    challenges: "",
   },
   {
     id: 3,
@@ -68,7 +69,7 @@ const projects = [
     category: "Construction",
     title: "Steel Frame Warehouse",
     img: "/con-work.jpg",
-     // videoUrl: "https://www.w3schools.com/html/movie.mp4",
+     videoUrl: "/VID-20260312-WA0040.mp4",
     location: "",
     problem: "",
     solution: "",
